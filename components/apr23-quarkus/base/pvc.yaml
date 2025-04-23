@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    app.kubernetes.io/instance: apr23-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: apr23-quarkus
+  name: apr23-quarkus
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Gi
